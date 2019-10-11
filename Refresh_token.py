@@ -35,14 +35,14 @@ class ObtainToken:
             data = json.load(json_file)
             env_values = data.get("values")
             for env_value in env_values:
-                if env_value.get('key') == "client_id":
-                    self.client_id = env_value.get('value')
+                if env_value['key'] == "client_id":
+                    self.client_id = env_value['value']
 
-                elif env_value.get('key') == "client_secret":
-                    self.client_secret = env_value.get('value')
+                elif env_value['key'] == "client_secret":
+                    self.client_id = env_value['value']
 
-                elif env_value.get('key') == "refresher_token":
-                    self.refresh_token = env_value.get('value')
+                elif env_value['key'] == "refresher_token":
+                    self.client_id = env_value['value']
 
 
 auth_token = ObtainToken("C:\\Users\\fabian.tolgyi\\Desktop\\Postman_spotify_dudu\\Spotify_API.postman_environment_FABI.json").generate_auth_token()

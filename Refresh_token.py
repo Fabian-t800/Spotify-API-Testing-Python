@@ -39,10 +39,10 @@ class ObtainToken:
                     self.client_id = env_value['value']
 
                 elif env_value['key'] == "client_secret":
-                    self.client_id = env_value['value']
+                    self.client_secret = env_value['value']
 
                 elif env_value['key'] == "refresher_token":
-                    self.client_id = env_value['value']
+                    self.refresh_token = env_value['value']
 
 
 auth_token = ObtainToken("C:\\Users\\fabian.tolgyi\\Desktop\\Postman_spotify_dudu\\Spotify_API.postman_environment_FABI.json").generate_auth_token()

@@ -46,4 +46,4 @@ class ObtainToken:
 
 
 auth_token = ObtainToken("C:\\Users\\fabian.tolgyi\\Desktop\\Postman_spotify_dudu\\Spotify_API.postman_environment_FABI.json").generate_auth_token()
-print(auth_token)
+#print(auth_token)
